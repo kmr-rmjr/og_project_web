@@ -2,6 +2,8 @@
 node_modules
 /dist
 
+/src/assets/img/members
+/src/assets/json
 
 # local env files
 .env.local
