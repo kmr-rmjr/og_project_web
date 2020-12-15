@@ -1,28 +1,39 @@
 <template>
   <v-main>
     <!-- mv -->
-    <v-container class="bg-linear height-100vh" fluid>
+    <v-container class="bg-linear height-100vh pt-10 pt-sm-0" fluid>
       <!-- header -->
-      <v-app-bar
-        dark
-        color="rgb(0, 0, 0, 0)"
-        flat
-        class="mb-10"
-      >
-        <v-toolbar-title>2020 OGATA PROJECT</v-toolbar-title>
-      </v-app-bar>
+      <template v-if="$vuetify.breakpoint.xs">
+      </template>
+        <template v-else>
+          <v-app-bar
+            dark
+            color="rgb(0, 0, 0, 0)"
+            flat
+            class="mb-10"
+          >
+            <v-toolbar-title>2020 OGATA PROJECT</v-toolbar-title>
+            <v-spacer></v-spacer>
+            <v-toolbar-items>
+              <v-btn text @click="goto('#about')">About</v-btn>
+              <v-btn text @click="goto('#activities')">Activities</v-btn>
+              <v-btn text @click="goto('#products')">Products</v-btn>
+              <v-btn text @click="goto('#members')">members</v-btn>
+            </v-toolbar-items>
+          </v-app-bar>
+        </template>
       <!-- mv-content -->
       <h1 class="text-lg-h3 text-center white--text">OGATA PROJECT 2020</h1>
       <h2 class="text-lg-h5 text-center white--text font-weight-bold">AIにオノマトペの力を</h2>
       <v-row justify="center">
         <v-col lg="4" sm="8">
-          <v-img src="@/assets/img/img-robot.png"></v-img>
+          <v-img contain max-height="100%" src="@/assets/img/img-robot.png"></v-img>
         </v-col>
       </v-row>
     </v-container>
 
     <!-- about -->
-    <section class="bg-yellow">
+    <section id="about" class="bg-yellow">
       <v-container fluid>
         <v-row align="center" justify="center">
           <v-col cols="11" lg="5" sm="9">
@@ -38,7 +49,7 @@
     </section>
 
     <!-- activities -->
-    <section class="bg-light-gray">
+    <section id="activities" class="bg-light-gray">
       <v-container fluid>
         <h2 :class="heading">Activities</h2>
           <activities></activities>
@@ -46,7 +57,7 @@
     </section>
 
     <!-- products -->
-    <section class="bg-salmon">
+    <section id="products" class="bg-salmon">
       <v-container fluid>
         <h2 :class="heading">Products</h2>
         <v-row justify="center">
@@ -58,7 +69,7 @@
     </section>
 
     <!-- members -->
-    <section class="bg-light-gray">
+    <section id="members" class="bg-light-gray">
       <v-container fluid>
         <h2 :class="heading">Members</h2>
         <v-row justify="center">
@@ -88,6 +99,11 @@ export default {
         lg: 8,
       },
       heading: ["text-center", "text-h4", "text-lg-h3", "my-8", "font-weight-medium"]
+    }
+  },
+  methods: {
+    goto(destination) {
+        this.$vuetify.goTo(destination);
     }
   }
 }

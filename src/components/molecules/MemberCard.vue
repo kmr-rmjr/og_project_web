@@ -1,6 +1,6 @@
 <template>
-<v-col lg="3" sm="4" cols="10">
-  <v-card height="max(350, 100%)" class="pa-3">
+<v-col lg="3" sm="4" cols="10" height="300px">
+  <v-card height="100%" class="pa-3">
     <v-img
       :src="require('@/assets/img/members/' + imgFile)"
       width="60%"
@@ -37,5 +37,4 @@ export default {
 </script>
 
 <style>
-
 </style>

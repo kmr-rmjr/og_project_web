@@ -11,8 +11,9 @@
     <v-col class="mt-lg-14" lg="7" cols="11">
       <h3 class="text-lg-h5 font-weight-bold text-center text-lg-left mb-5">{{title}}</h3>
       <ul>
-        <slot></slot>
+        <slot name="feature"></slot>
       </ul>
+      <slot name="product-link"></slot>
     </v-col>
   </v-row>
 </template>
