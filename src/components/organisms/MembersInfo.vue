@@ -1,50 +1,28 @@
 <template>
-  <v-row>
+  <v-row justify="center" justify-sm="start">
     <member-card
-      img-file="icon-member-kimura.png"
-      name="木村"
-      position="代表"
-      message="がんばります。"
-    ></member-card>
-    <member-card
-      img-file="icon-member-kimura.png"
-      name="木村"
-      position="代表"
-      message="がんばります。"
-    ></member-card>
-    <member-card
-      img-file="icon-member-kimura.png"
-      name="木村"
-      position="代表"
-      message="がんばります。"
-    ></member-card>
-    <member-card
-      img-file="icon-member-kimura.png"
-      name="木村"
-      position="代表"
-      message="がんばります。"
-    ></member-card>
-    <member-card
-      img-file="icon-member-kimura.png"
-      name="木村"
-      position="代表"
-      message="がんばります。"
-    ></member-card>
-    <member-card
-      img-file="icon-member-kimura.png"
-      name="木村"
-      position="代表"
-      message="がんばります。"
+      v-for="member in membersInfo"
+      :key="member.id"
+      :img-file="`icon-member-${member.img}`"
+      :name="member.name"
+      :position="member.position"
+      :message="member.message"
     ></member-card>
   </v-row>
 </template>
 
 <script>
 import MemberCard from '@/components/molecules/MemberCard.vue'
+import members from '@/assets/json/members_info.json';
 
 export default {
   components: {
     MemberCard,
+  },
+  data() {
+    return {
+      membersInfo : members,
+    }
   }
 }
 </script>
