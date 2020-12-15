@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center" class="mb-12">
-    <v-col lg="5" cols="11">
+    <v-col lg="5" sm="6" cols="11">
       <v-img
         :src="require('@/assets/img/' + imgFile)"
         width="40%"

@@ -2,6 +2,7 @@
   <v-main>
     <!-- mv -->
     <v-container class="bg-linear height-100vh" fluid>
+      <!-- header -->
       <v-app-bar
         dark
         color="rgb(0, 0, 0, 0)"
@@ -10,12 +11,11 @@
       >
         <v-toolbar-title>2020 OGATA PROJECT</v-toolbar-title>
       </v-app-bar>
-
+      <!-- mv-content -->
       <h1 class="text-lg-h3 text-center white--text">OGATA PROJECT 2020</h1>
       <h2 class="text-lg-h5 text-center white--text font-weight-bold">AIにオノマトペの力を</h2>
-
       <v-row justify="center">
-        <v-col lg="4">
+        <v-col lg="4" sm="8">
           <v-img src="@/assets/img/img-robot.png"></v-img>
         </v-col>
       </v-row>
@@ -24,13 +24,13 @@
     <!-- about -->
     <section class="bg-yellow">
       <v-container fluid>
-        <v-row align="center">
-          <v-col>
-            <h3>オノマトペという言葉を知る</h3>
-            <p>私達はオノマトペの持つ多彩な表現力に注目しました。ドキドキ、わくわく、ズキズキなど、私達はオノマトペという強力な表現を理解し、日常的に使用しています。しかし、このような表現は機械にとって非常に難解なものです。<br>
+        <v-row align="center" justify="center">
+          <v-col cols="11" lg="5" sm="9">
+            <h3 class="text-center text-h5 text-sm-h4 text-lg-left font-weight-bold mb-6">オノマトペという言葉を知る</h3>
+            <p class="text-lg-subtitle-1">私達はオノマトペの持つ多彩な表現力に注目しました。ドキドキ、わくわく、ズキズキなど、私達はオノマトペという強力な表現を理解し、日常的に使用しています。しかし、このような表現は機械にとって非常に難解なものです。<br>
             私たち尾形プロジェクトの目標は、様々な方へのインタビューや検証を通じて言語学的側面からオノマトペという言葉を理解すること、機械翻訳と人知を組み合わせオノマトペの表現に特化したハイブリッド翻訳機を完成させることです。</p>
           </v-col>
-          <v-col lg="5">
+          <v-col cols="11" lg="5" sm="7">
             <v-img src="@/assets/img/img-brain.png" max-width="100%"></v-img>
           </v-col>
         </v-row>
@@ -87,7 +87,7 @@ export default {
       contain: {
         lg: 8,
       },
-      heading: ["text-center", "text-lg-h4", "my-8"]
+      heading: ["text-center", "text-h4", "text-lg-h3", "my-8", "font-weight-medium"]
     }
   }
 }

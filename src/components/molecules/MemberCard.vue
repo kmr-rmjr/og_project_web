@@ -1,5 +1,5 @@
 <template>
-<v-col lg="3" sm="4" cols="11">
+<v-col lg="3" sm="4" cols="10">
   <v-card height="max(350, 100%)" class="pa-3">
     <v-img
       :src="require('@/assets/img/members/' + imgFile)"

@@ -4,7 +4,7 @@
       <main-page></main-page>
     </v-main>
     <v-footer color="#3D3D3D" class="py-4">
-      <p class="white--text ma-auto">Copyright OGATA PROJECT 2020. All Rights Reserved.</p>
+      <p class="white--text text-center ma-auto">Copyright OGATA PROJECT 2020.<br>All Rights Reserved.</p>
     </v-footer>
   </v-app>
 </template>
