@@ -1,8 +1,9 @@
 <template>
-<v-col lg="3" sm="4" cols="10" height="300px">
-  <v-card height="100%" class="pa-3">
+<v-col lg="3" sm="4" cols="9" height="300px">
+  <v-card flat height="100%" class="pa-3">
     <v-img
       :src="require('@/assets/img/members/' + imgFile)"
+      :lazy-src="require('@/assets/img/members/' + imgFile)"
       width="60%"
       class="mx-auto rounded-circle"
     ></v-img>

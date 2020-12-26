@@ -27,7 +27,7 @@
       <h2 class="text-lg-h5 text-center white--text font-weight-bold">AIにオノマトペの力を</h2>
       <v-row justify="center">
         <v-col lg="4" sm="8">
-          <v-img contain max-height="100%" src="@/assets/img/img-robot.png"></v-img>
+          <v-img contain max-height="100%" src="@/assets/img/img-robot.png" lazy-src="@/assets/img/img-robot.png"></v-img>
         </v-col>
       </v-row>
     </v-container>
@@ -42,7 +42,7 @@
             私たち尾形プロジェクトの目標は、様々な方へのインタビューや検証を通じて言語学的側面からオノマトペという言葉を理解すること、機械翻訳と人知を組み合わせオノマトペの表現に特化したハイブリッド翻訳機を完成させることです。</p>
           </v-col>
           <v-col cols="11" lg="5" sm="7">
-            <v-img src="@/assets/img/img-brain.png" max-width="100%"></v-img>
+            <v-img src="@/assets/img/img-brain.png" lazy-src="@/assets/img/img-brain.png" max-width="100%"></v-img>
           </v-col>
         </v-row>
       </v-container>
@@ -127,6 +127,6 @@ export default {
 }
 
 .bg-light-gray{
-  background-color: #F6F6F6;
+  background-color: #f0f0f0;
 }
 </style>

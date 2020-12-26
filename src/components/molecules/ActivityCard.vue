@@ -3,6 +3,7 @@
     <v-card flat color="rgb(0, 0, 0, 0)" class="mb-10">
       <v-img
         :src="require('@/assets/img/' + imgFile)"
+        :lazy-src="require('@/assets/img/' + imgFile)"
         width="40%"
         class="mx-auto"
       ></v-img>

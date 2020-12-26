@@ -21,7 +21,7 @@
     <template v-slot:feature>
       <li class="mb-3">痛みのオノマトペを外国語で伝えることに特化したコミュニケーター</li>
       <li class="mb-3">様々な言語への翻訳に対応</li>
-      <li class="mb-3">Web上で利用可能 (PC, スマートフォン, タブレット対応)</li>
+      <li class="mb-3">音声入力, 読み上げ機能搭載</li>
     </template>
     </product-info>
 

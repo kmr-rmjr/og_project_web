@@ -13,7 +13,7 @@
     <activity-card
       img-file="icon-conversation.svg"
       title="インタビュー"
-      text="留学生や言語学に知見のある先生方へインビューを行い、言語学的な観点からオノマトペについて調査しています。"
+      text="留学生や大学の先生方へインビューを行い、言語学的な観点からオノマトペについて調査しています。"
     ></activity-card>
     </v-row>
 </template>
